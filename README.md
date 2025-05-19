@@ -19,18 +19,18 @@ Desenvolvemos uma estrutura de dados para representar análises patológicas de 
 
 
 ### Hipóteses Assumidas
-1. **Parâmetros Relevantes**: Características como diâmetro, assimetria e bordas são indicadores importantes para avaliação de lesões de pele, baseando-nos na regra ABCDE usada por dermatologistas (Assimetria, Bordas, Cor, Diâmetro, Evolução).
+1. **Parâmetros Relevantes**:
 
 2. **Valores de Referência**: Estabelecemos limiares para identificar lesões potencialmente problemáticas:
    - Diâmetro > 0.6cm como indicador de atenção
    - Assimetria > 0.5 (escala 0-1) como indicador de atenção
    - Volume > 0.5cm³ como indicador de atenção
 
-3. **Categorização de Lesões**: Dividimos as lesões em diferentes tipos (pinta, cisto, sinal, mancha) com características distintas para permitir análise comparativa entre casos.
+3. **Categorização de Lesões**: Dividimos as análises em diferentes tipos (pinta, cisto, sinal) com características distintas para permitir análise comparativa entre casos e também foi o recomendado no Kickoff da DASA usar estas que são as mais comuns.
 
-4. **Priorização Clínica**: Implementamos um sistema de prioridade (1-5) para organizar a análise dos casos por urgência, assumindo que características específicas exigem avaliação mais rápida.
+4. **Priorização Clínica usando fila**: Implementamos uma função de prioridade para organizar a análise dos casos por urgência, assumindo que características específicas exigem avaliação mais rápida.
 
-## Técnicas de Programação Utilizadas
+## Técnicas de Utilizadas
 
 1. **Estruturas de Dados Aninhadas**: Utilizamos dicionários e listas aninhados para representar a hierarquia de informações médicas.
 
@@ -79,31 +79,17 @@ Desenvolvemos uma estrutura de dados para representar análises patológicas de 
 
 ## Como Executar
 
-1. Abra o código no Google Colab ou Jupyter Notebook (recomendado)
+1. Abra o código no Google Colab | Jupyter Notebook (recomendado) ou em um ambiente python
 2. Execute as células em ordem
 3. As funções de demonstração mostram o funcionamento de cada componente
 
-## Conclusão
-
-O sistema desenvolvido demonstra a aplicação prática de estruturas de dados e algoritmos eficientes para gerenciar e analisar informações de exames patológicos. Aplicamos com sucesso os conceitos aprendidos na disciplina, criando uma solução escalável e eficiente para o problema proposto.
-
-As estruturas e algoritmos implementados permitem:
-- Organização eficiente dos dados médicos
-- Comparação entre valores examinados e de referência
-- Priorização de casos por gravidade
-- Busca otimizada de pacientes
-- Extração e manipulação de dados específicos por paciente
 
 Este sistema serve como base para futuros desenvolvimentos, incluindo a integração com visão computacional para automatizar a análise de imagens patológicas.
 
 ## Referências
 
-1. Elder, D. E., Massi, D., Scolyer, R. A., & Willemze, R. (2018). *WHO Classification of Skin Tumours (4th ed.)*. Lyon: International Agency for Research on Cancer.
+1. SALVETTI, Dirceu Douglas; BARBOSA, Lisbete Madson. Algoritmos. São Paulo: Pearson, 2004
 
-2. Swetter, S. M., Tsao, H., Bichakjian, C. K., et al. (2019). "Guidelines of care for the management of primary cutaneous melanoma." *Journal of the American Academy of Dermatology*, 80(1), 208-250. https://doi.org/10.1016/j.jaad.2018.08.055
+2. MENEZES, Nilo. Introdução à Programação em Python. São Paulo: Novatec, 2019
 
-3. Goodrich, M. T., Tamassia, R., & Goldwasser, M. H. (2021). *Data Structures and Algorithms in Python (2nd ed.)*. Wiley.
 
-4. Van Rossum, G., Warsaw, B., & Coghlan, N. (2001). *PEP 8 – Style Guide for Python Code*. Python.org. https://peps.python.org/pep-0008/
-
-5. VanderPlas, J. (2023). *Python Data Science Handbook (2nd ed.)*. O'Reilly Media.
