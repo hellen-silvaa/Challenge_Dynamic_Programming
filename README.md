@@ -9,7 +9,7 @@
 
 ## Descrição do Projeto
 
-Este projeto foi desenvolvido como parte da Sprint 1 da disciplina de Dynamic Programming da FIAP orientada pelo professor Francisco Elanio Bezerra. Nossa equipe optou pelo desafio 2 proposto pela DASA, que consiste em desenvolver um sistema de análise patológica.
+Este projeto foi desenvolvido como parte da Sprint 1 e 2 da disciplina de Dynamic Programming da FIAP orientada pelo professor Francisco Elanio Bezerra. Nossa equipe optou pelo desafio 2 proposto pela DASA, que consiste em desenvolver um sistema de análise patológica.
 Desenvolvemos uma solução para análise de exames patológicos, permitindo o armazenamento e processamento de dados de amostras patológicas, sinais e cistos, com foco particular nas dimensões (altura, largura e comprimento) e características patológicas.
 
 ## Explicação das Hipóteses e Dados Considerados
@@ -20,15 +20,19 @@ Desenvolvemos uma estrutura de dados para representar análises patológicas de 
 
 ### Hipóteses Assumidas
 1. **Parâmetros Relevantes**:
+   - **Assimetria**: Fator crítico para detecção de malignidade (escala 0-1)
+   - **Diâmetro**: Tamanho da lesão como indicador de crescimento
+   - **Volume**: Cálculo tridimensional para análise de progressão  
+   - **Localização**: Área anatômica para análise de risco específico
 
-2. **Valores de Referência**: Estabelecemos limiares para identificar lesões potencialmente problemáticas:
+3. **Valores de Referência**: Estabelecemos limiares para identificar lesões potencialmente problemáticas:
    - Diâmetro > 0.6cm como indicador de atenção
    - Assimetria > 0.5 (escala 0-1) como indicador de atenção
    - Volume > 0.5cm³ como indicador de atenção
 
-3. **Categorização de Lesões**: Dividimos as análises em diferentes tipos (pinta, cisto, sinal) com características distintas para permitir análise comparativa entre casos e também foi o recomendado no Kickoff da DASA usar estas que são as mais comuns.
+4. **Categorização de Lesões**: Dividimos as análises em diferentes tipos (pinta, cisto, sinal) com características distintas para permitir análise comparativa entre casos e também foi o recomendado no Kickoff da DASA usar estas que são as mais comuns.
 
-4. **Priorização Clínica usando fila**: Implementamos uma função de prioridade para organizar a análise dos casos por urgência, assumindo que características específicas exigem avaliação mais rápida.
+5. **Priorização Clínica usando fila**: Implementamos uma função de prioridade para organizar a análise dos casos por urgência, assumindo que características específicas exigem avaliação mais rápida.
 
 ## Técnicas de Utilizadas
 
@@ -57,11 +61,9 @@ Desenvolvemos uma estrutura de dados para representar análises patológicas de 
 ## Documentação de Código
 
 ### Normas de Codificação Seguidas
-- **Padrões PEP 8**: Seguimos as diretrizes de estilo do Python Enhancement Proposal 8
-- **Nomenclatura**: Utilizamos snake_case para variáveis e funções, CamelCase para classes
-- **Docstrings**: Todas as funções e classes possuem docstrings explicativas
-- **Comentários**: Adicionamos comentários em trechos complexos para facilitar entendimento
-- **Organização**: Estruturamos o código em blocos funcionais para melhor legibilidade
+- Padrões PEP 8: Seguimos as diretrizes de estilo do Python
+- Nomenclatura: snake_case para variáveis, CamelCase para classes
+- Comentários: Trechos explicados
 
 ### Estrutura do Código
 - **Estrutura de Dados Base**: Definição do `database` com dados dos pacientes e exames
@@ -87,9 +89,8 @@ Desenvolvemos uma estrutura de dados para representar análises patológicas de 
 Este sistema serve como base para futuros desenvolvimentos, incluindo a integração com visão computacional para automatizar a análise de imagens patológicas.
 
 ## Referências
-
-1. SALVETTI, Dirceu Douglas; BARBOSA, Lisbete Madson. Algoritmos. São Paulo: Pearson, 2004
-
-2. MENEZES, Nilo. Introdução à Programação em Python. São Paulo: Novatec, 2019
-
+1.  SALVETTI, Dirceu Douglas; BARBOSA, Lisbete Madson. Algoritmos. Pearson, 2004.
+2.MENEZES, Nilo. Introdução à Programação em Python. São Paulo: Novatec, 2019 
+3. CORMEN, Thomas H. et al. Algoritmos: Teoria e Prática. 3ª ed. Elsevier, 2012.
+4.  DASA. Diretrizes para Análise Patológica Digital. 2023.
 
