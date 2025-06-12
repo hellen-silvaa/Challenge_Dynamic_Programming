@@ -90,7 +90,7 @@ Este sistema serve como base para futuros desenvolvimentos, incluindo a integra�
 
 ## Referências
 1.  SALVETTI, Dirceu Douglas; BARBOSA, Lisbete Madson. Algoritmos. Pearson, 2004.
-2.MENEZES, Nilo. Introdução à Programação em Python. São Paulo: Novatec, 2019 
-3. CORMEN, Thomas H. et al. Algoritmos: Teoria e Prática. 3ª ed. Elsevier, 2012.
+2.  MENEZES, Nilo. Introdução à Programação em Python. São Paulo: Novatec, 2019.
+3.  CORMEN, Thomas H. et al. Algoritmos: Teoria e Prática. 3ª ed. Elsevier, 2012.
 4.  DASA. Diretrizes para Análise Patológica Digital. 2023.
 
